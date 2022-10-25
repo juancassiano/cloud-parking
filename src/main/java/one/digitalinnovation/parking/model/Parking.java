@@ -1,6 +1,7 @@
 package one.digitalinnovation.parking.model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Parking {
 
@@ -9,8 +10,8 @@ public class Parking {
     private String state;
     private String model;
     private String color;
-    private LocalDate entryDate;
-    private LocalDate exitDate;
+    private LocalDateTime entryDate;
+    private LocalDateTime exitDate;
     private Double bill;
 
     public Parking(String id, String license, String state, String model, String color) {
@@ -64,19 +65,19 @@ public class Parking {
         this.color = color;
     }
 
-    public LocalDate getEntryDate() {
+    public LocalDateTime getEntryDate() {
         return entryDate;
     }
 
-    public void setEntryDate(LocalDate entryDate) {
+    public void setEntryDate(LocalDateTime entryDate) {
         this.entryDate = entryDate;
     }
 
-    public LocalDate getExitDate() {
+    public LocalDateTime getExitDate() {
         return exitDate;
     }
 
-    public void setExitDate(LocalDate exitDate) {
+    public void setExitDate(LocalDateTime exitDate) {
         this.exitDate = exitDate;
     }
 
