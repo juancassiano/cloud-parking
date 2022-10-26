@@ -32,8 +32,6 @@ public class ParkingService {
         return parking;
     }
 
-
-
     public Parking create(Parking parkingCreate) {
         String uuid = getUUID();
         parkingCreate.setId(uuid);
