@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
@@ -48,8 +49,6 @@ class ParkingControllerIT {
                 .then()
                 .statusCode(HttpStatus.CREATED.value())
                 .body("license", Matchers.equalTo("FBI-0800"))
-                .body("color", Matchers.equalTo("AMARELO"))
-                .body("model", Matchers.equalTo("UNO"))
-                .body("state", Matchers.equalTo("RJ"));
+                .body("color", Matchers.equalTo("AMARELO"));
     }
 }
