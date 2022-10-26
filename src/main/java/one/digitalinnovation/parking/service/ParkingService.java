@@ -54,10 +54,10 @@ public class ParkingService {
         return parking;
     }
 
-    public Parking exit(String id) {
-        Parking parking = findById(id);
-        parking.setExitDate(LocalDateTime.now());
-        parkingMap.replace(id, parking);
-        return parking;
-    }
+//    public Parking exit(String id) {
+//        Parking parking = findById(id);
+//        parking.setExitDate(LocalDateTime.now());
+//        parkingMap.replace(id, parking);
+//        return parking;
+//    }
 }

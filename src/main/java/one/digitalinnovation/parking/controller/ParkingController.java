@@ -77,12 +77,12 @@ public class ParkingController {
 
     }
 
-    @PostMapping("/{id}")
-    @ApiOperation("Update")
-    public ResponseEntity<ParkingDTO> exit(@PathVariable String id){
-        var parking = (Parking) parkingService.exit(id);
-
-        return ResponseEntity.ok(parkingMapper.toParkingDTO(parking));
-
-    }
+//    @PostMapping("/{id}")
+//    @ApiOperation("Update")
+//    public ResponseEntity<ParkingDTO> exit(@PathVariable String id){
+//        var parking = (Parking) parkingService.exit(id);
+//
+//        return ResponseEntity.ok(parkingMapper.toParkingDTO(parking));
+//
+//    }
 }
